@@ -1,0 +1,112 @@
+#include<iostream>
+using namespace std;
+int main ( )
+{
+    char c;
+    int b=1;
+    for (int j=0; ;j++)
+    {
+    cout<<"operations of Arrays ——MENU——-1.CREATE 2.DISPLAY 3.INSERT 4.DELETE 5.LINEAR SEARCH 6.EXIT"<<endl;
+    int n;
+    cin>>n;
+    cout<<"the choice is "<<n<<endl;
+    switch(n)
+    {
+        case 1:
+            int arr[1000];
+            cout<<"enter the size of the array u want to create "<<endl;
+            int s;
+            cin>>s;
+            for(int i=0;i<s;i++)
+            {
+                cout<<"enter the "<<i<<"th elemnt "<<endl;
+                cin>>arr[i];
+            }
+            cout<<"do you still need to perform any opertation?? Y for yes N for no"<<endl;
+            cin>>c;
+            if(c=='N')
+            {
+                b=0;
+                break;
+            }
+            if(c=='Y')
+            {
+                b=1;
+                break;
+            }
+            
+        case 2 :
+        {
+            for (int i=0;i<s;i++)
+            {
+                cout<<arr[i]<<endl;
+            }
+            
+            break;
+        }
+        case 3 :
+            
+            cout<<"enter the element to be inserted"<<endl;
+            int e;
+            cin>>e;
+
+            arr[s]=e;
+            s+=1;
+            for (int i=0;i<s;i++)
+            {
+                cout<<arr[i]<<endl;
+            }
+            
+            
+            break;
+        case 4 :
+            
+            cout<<"enter the element to be deleted"<<endl;
+            int de;
+            cin>>de;
+            int index;
+            for(int i=0;i<s;i++)
+            {
+                if(arr[i]==de)
+                {
+                    index=i;
+                }
+            }
+            for(int i=index;i<s;i++)
+            {
+                arr[i]=arr[i+1];
+            }
+            s=s-1;
+            for (int i=0;i<s;i++)
+            {
+                cout<<arr[i]<<endl;
+            }
+            break;
+        case 5:
+            cout<<"enter the element to be serched for"<<endl;
+            int se;
+            cin>>se;
+            for (int i=0;i<s;i++)
+            {
+                if(arr[i]==se)
+                {
+                    cout<<"element is found at "<<i<<"th index"<<endl;
+                    break;
+                }
+            }
+            break;
+        case 6:
+            cout<<"exiting"<<endl;
+        default:
+            cout<<"wrong choice"<<endl;
+        
+    }
+    if(b==0)
+    {
+        break;
+    }
+    }
+    
+}
+
+
