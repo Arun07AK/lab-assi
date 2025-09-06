@@ -1,5 +1,4 @@
 #include <iostream>
-//static member funtions
 using namespace std;
 int count=50;
 class Rectangle
