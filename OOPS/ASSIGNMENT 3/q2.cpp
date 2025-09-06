@@ -12,6 +12,11 @@ class Rectangle
             this->l=l;
             this->b =b;
         }
+        Rectangle(double side)       
+        {
+            this->l = (int)side;
+            this->b = (int)side;
+        }
 
         void Setl(int l)
         {
@@ -43,7 +48,7 @@ int main()
         Rectangle arr[3] = {
         Rectangle(),        // Default constructor
         Rectangle(6, 4),    // Two parameters
-        Rectangle(5)        // Single parameter
+        Rectangle(5.0)        // Single parameter
     };
     
     cout<<"r1  :"<<arr[0].area()<<endl;
