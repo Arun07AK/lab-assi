@@ -1,3 +1,4 @@
+//6.Implement static member function using a C++ program.
 #include <iostream>
 using namespace std;
 class Rectangle
