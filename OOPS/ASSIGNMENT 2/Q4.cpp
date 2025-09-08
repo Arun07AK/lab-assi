@@ -1,4 +1,4 @@
-4.Write a program to define function cube() as inline for calculating cube of a number.
+//4.Write a program to define function cube() as inline for calculating cube of a number.
 #include <iostream>
 using namespace std;
 class Number
