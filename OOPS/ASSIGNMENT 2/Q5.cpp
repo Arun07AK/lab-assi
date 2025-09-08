@@ -1,3 +1,4 @@
+//5.Write a program to declare static public member variable, global and local variable with the same name. Initialize and display their contents.
 #include <iostream>
 using namespace std;
 int count=50;
