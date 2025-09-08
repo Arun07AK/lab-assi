@@ -1,4 +1,4 @@
-2.Write a program using Array of Objects to display area of multiple rectangles.
+//2.Write a program using Array of Objects to display area of multiple rectangles.
 #include <iostream>
 using namespace std;
 class Rectangle
