@@ -1,3 +1,4 @@
+//2.Redefine the above program by creating an array of objects of the class Rectangle and calculate area for each object calling different constructors. Also implement constructors with default arguments and destructor in this program.
 #include <iostream>
 using namespace std;
 class Rectangle
